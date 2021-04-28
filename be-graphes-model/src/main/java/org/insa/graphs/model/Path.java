@@ -202,7 +202,27 @@ public class Path {
      */
     public boolean isValid() {
         // TODO:
-        return false;
+        /* si le path est vide*/
+        if(this.isEmpty()) {
+        	return true ;
+        }
+        
+        /* si le path contient un seul noeud*/
+        else if (this.size() == 1){
+        	return true ;
+        }
+        
+        /*Cas general */
+        else {
+        	Node origin = this.getOrigin() ;
+        	for (Arc myArc : this.arcs) {
+        		if (!origin.equals(myArc.getOrigin())) {
+        			return false;
+        		}
+        		origin = myArc.getDestination() ;
+        	}
+        }
+        return true ;
     }
 
     /**
@@ -210,11 +230,14 @@ public class Path {
      * 
      * @return Total length of the path (in meters).
      * 
-     * @deprecated Need to be implemented.
      */
     public float getLength() {
         // TODO:
-        return 0;
+        float Length = 0.0f ;
+        for (Arc myArc : this.arcs) {
+        	Length += myArc.getLength() ;
+        }
+        return Length ;
     }
 
     /**
@@ -229,7 +252,11 @@ public class Path {
      */
     public double getTravelTime(double speed) {
         // TODO:
-        return 0;
+    	double Time = 0.0 ;
+    	float Length = getLength() ;
+    	double peed_m_s = speed * (10.0/36.0) ;
+    	Time = Length / Speed_m_s ;
+    	return Time ;
     }
 
     /**
