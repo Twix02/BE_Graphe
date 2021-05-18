@@ -3,6 +3,7 @@ package org.insa.graphs.algorithm.shortestpath;
 import org.insa.graphs.model.*;
 
 public class Label implements Comparable<Label>{
+	
 	protected Node SommetCourant ;
 	private Arc Pere ;
 	private boolean Marque ;
