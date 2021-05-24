@@ -45,7 +45,7 @@ public class Path {
         }
         /* Liste des nodes composés d'au moins 2 nodes */ 
         else {
-        	//Going Through our list of nodes
+        	//Parcours des noeuds
         	 for (int i = 1; i < nodes.size(); ++i)
  	        {
         		 Arc FastArc = null ;
@@ -63,6 +63,7 @@ public class Path {
  	        		}
  	        	}
  	        	
+ 	        	//On renvoie une erreur si on ne trouve pas d'arc
  	        	if (FastArc == null) {
  	        		throw new IllegalArgumentException();
  	        		
@@ -118,6 +119,7 @@ public class Path {
  	        		}
  	        	}
  	        	
+ 	        	//On renvoie une erreur si on ne trouve pas d'arc
  	        	if (ShortArc == null) {
  	        		throw new IllegalArgumentException();
  	        		
