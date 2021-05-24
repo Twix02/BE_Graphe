@@ -26,7 +26,7 @@ import org.junit.Test;
 
 public class DijkstraTest {
 	
-	protected static String mapMaroc, mapGuadeloupe, mapCarre, mapHauteGaronne ;
+	protected static String mapCarre, mapHauteGaronne ;
 	protected static DijkstraAlgorithm CheminNul_d, CheminStandardCarre_d, CheminStandard_d, CheminImpossible_d, CheminNul_t, CheminStandardCarre_t, CheminStandard_t, CheminImpossible_t, CheminNul_vd, CheminStandardCarre_vd, CheminStandard_vd, CheminImpossible_vd;
 	
 	@BeforeClass
