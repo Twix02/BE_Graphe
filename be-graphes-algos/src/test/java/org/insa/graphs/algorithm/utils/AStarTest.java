@@ -52,7 +52,7 @@ public class AStarTest extends DijkstraTest {
 	    final ShortestPathData CheminStandardCarreData_cl = new ShortestPathData(Carre, Carre.getNodes().get(22), HauteGaronne.getNodes().get(15), cars_length);
 	    
 	    
-	    ///Avec la carte routière (Haute-Garonne)
+	    ///Avec la carte routière (Haute-Garonne) 
 	    //Chemin impossible
 	    final ShortestPathData CheminImpossibleData_d = new ShortestPathData(HauteGaronne, HauteGaronne.getNodes().get(66593), HauteGaronne.getNodes().get(121378), nofilter_length);
 	    final ShortestPathData CheminImpossibleData_t = new ShortestPathData(HauteGaronne, HauteGaronne.getNodes().get(66593), HauteGaronne.getNodes().get(121378), nofilter_time);
