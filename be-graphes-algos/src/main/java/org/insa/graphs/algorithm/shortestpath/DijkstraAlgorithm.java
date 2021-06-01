@@ -51,7 +51,7 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
     	Node Destination = data.getDestination() ;
     	Label DestinationLabel = ArrayLabels[Destination.getId()];
     	
-    	/*Insertrion de Origin dans le tas */
+    	/*Insertion de Origin dans le tas */
     	OriginLabel.setCout(0);
     	Tas.insert(OriginLabel);
     	
